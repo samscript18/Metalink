@@ -1,0 +1,14 @@
+export { default as Navbar } from "./Navbar";
+export { default as Header } from "./Header";
+export { default as Button } from "./Button";
+export { default as Collections } from "./Collections";
+export { default as Slide } from "./Slide";
+export { default as SliderButtons } from "./SliderButtons";
+export { default as Explore } from "./Explore";
+export { default as Card } from "./Card";
+export { default as Clients } from "./Clients";
+export { default as Client } from "./Client";
+export { default as QA } from "./QA";
+export { default as Contact } from "./Contact";
+export { default as CTA } from "./CTA";
+export { default as Footer } from "./Footer";

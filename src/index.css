@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --linear-gradient-1: linear-gradient(
+    to top left,
+    hsla(0, 72%, 51%, 0.4) 0%,
+    hsla(262, 83%, 58%, 0.4)
+  );
+  --linear-gradient-2: linear-gradient(
+    to right,
+    hsla(262, 83%, 58%, 1),
+    hsla(0, 72%, 51%, 1)
+  );
+  --shadow-1: 0 0 3px hsl(215, 28%, 17%);
+  --shadow-2: 0 5px 13px hsl(215, 28%, 17%);
+  --shadow-3: 0 5px 13px hsl(217, 39%, 19%);
+  --shadow-4: 0 0 3px hsl(217, 19%, 27%);
+  --shadow-5: 0 5px 13px hsla(214, 19%, 29%, 0.2);
+}
+
+.text-gradient {
+  background-image: var(--linear-gradient-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.body-gradient {
+  background-image: var(--linear-gradient-1);
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.swiper-horizontal {
+  overflow: hidden;
+}
+.place-bid {
+  bottom: 40%;
+  opacity: 0;
+  transition: all ease-in 300ms;
+}
+.card,
+.slide,
+.accordion {
+  box-shadow: var(--shadow-3);
+}
+.cta {
+  box-shadow: var(--shadow-2);
+}
+.card:hover {
+  box-shadow: var(--shadow-5);
+}
+.card:hover .place-bid {
+  bottom: 65%;
+  opacity: 1;
+}
